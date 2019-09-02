@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>New Task</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <a class="navbar-brand" href="/"><img src="images/logo.jpg" width="100px" height="50px"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="/newTask">Add Task</a></li>
+            <li class="nav-item"><a class="nav-link" href="/listTasks">List Task</a></li>
+            <li class="nav-item"><a class="nav-link" href="/updateTask">Update Task</a></li>
+            <li class="nav-item"><a class="nav-link" href="/removeTask">Remove Task</a></li>
+            <li class="nav-item"><a class="nav-link" href="/addDeveloper">Add Developer</a></li>
+            <li class="nav-item"><a class="nav-link" href="/listDeveloper">List Developer</a></li>
+            <li class="nav-item"><a class="nav-link" href="/removeComplete">Remove Complete Tasks</a></li>
+
+        </ul>
+    </div><!-- /.navbar-collapse -->
+</nav>
+<div class="container-fluid">
+    <div class="row">
+
+        <form action="/addDeveloper" method="post">
+
+            <div class="form-group">
+                <label for="name">Developer First Name</label>
+                <input class="form-control" id="name" name="name" type="text"/>
+            </div>
+            <div class="form-group">
+                <label for="surname">Developer Surname</label>
+                <input class="form-control" id="surname" name="surname" type="text"/>
+            </div>
+
+            <div class="form-group">
+                <label for="level">Developer Level</label>
+                <select class="form-control" id="level" name="level" multiple>
+                    <option value="Beginner">Beginner</option>
+                    <option value="Expert">Expert</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="state">State</label>
+                <input class="form-control" id="state" name="state" type="text"/>
+            </div>
+
+            <div class="form-group">
+                <label for="suburb">Suburb</label>
+                <input class="form-control" id="suburb" name="suburb" type="text"/>
+            </div>
+
+            <div class="form-group">
+                <label for="street">Street</label>
+                <input class="form-control" id="street" name="street" type="text"/>
+            </div>
+
+            <div class="form-group">
+                <label for="unit">Unit</label>
+                <input class="form-control" id="unit" name="unit" type="text"/>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <script src="jquery/dist/jquery.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+    <div>
+</body>
+</html>

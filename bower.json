@@ -1,0 +1,21 @@
+{
+  "name": "fit2095-lab4",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Alano Terblanche <ater13@student.monash.edu>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/deeplearning4j/dl4j-examples",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.1.3"
+  }
+}
